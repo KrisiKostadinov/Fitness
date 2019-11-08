@@ -1,0 +1,124 @@
+footer {
+    background-color: var(--dark-background);
+}
+
+footer .wrapper {
+    padding: 2em 0;
+}
+
+footer .wrapper .about-section ul {
+    width: fit-content;
+    display: flex;
+    background-color: #444;
+    list-style-type: none;
+    padding: 1em 0;
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    box-shadow: 0 0 20px #444;
+}
+
+footer section {
+    width: calc(100% / 4);
+}
+
+footer .about-section ul li a {
+    padding: 1em;
+    color: var(--white-text-color);
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    transition: 1s;
+}
+
+footer .about-section ul li a:hover {
+    background-color: #fff;
+    color: #444;
+}
+
+footer {
+    color: #fff;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .wrapper section {
+    min-width: 270px;
+    text-align: left;
+    transition: 1s;
+    border-radius: 2em;
+}
+
+footer section:hover {
+    padding: 1em;
+    background-color: #fff;
+    color: #444;
+}
+
+footer section:hover h2::after {
+    background-color: #444;
+}
+
+footer section:hover .links-section ul li a {
+    color: #444;
+}
+
+footer .about-section p {
+    padding: 1em 0 2em 0;
+}
+
+footer > p {
+    text-align: center;
+    background-color: #000;
+    padding: 0.7em 0;
+}
+
+footer .contacts-section .group-info {
+    padding: 1em 0;
+}
+
+footer .wrapper h2 {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+footer .wrapper h2::after {
+    content: '';
+    width: 90%;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    position: absolute;
+}
+
+.links-section ul {
+    list-style-type: none;
+}
+
+.links-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 770px) {
+    footer .wrapper {
+        justify-content: center;
+    }
+
+    footer .wrapper section {
+        width: 100%;
+        margin: 2em 0;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    header.header .wrapper .buttons a {
+        margin: 0;
+        padding: 0.7em 1em;
+    }
+}

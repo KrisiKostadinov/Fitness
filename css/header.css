@@ -6,6 +6,8 @@ background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0
 }
 
 header.header .wrapper h2 {
+    width: fit-content;
+    margin: 0 auto;
     position: relative;
     font-size: 4em;
     text-transform: uppercase;
@@ -24,7 +26,7 @@ header.header .wrapper h2 {
 
 header.header .wrapper h2::after {
     content: '';
-    width: 70%;
+    width: 90%;
     height: 2px;
     bottom: 0;
     left: 50%;
@@ -60,7 +62,18 @@ header.header .wrapper .buttons .btn-a {
     transition: 1s;
 }
 
-header.header .wrapper .buttons .btn-a:hover {
+header.header .wrapper .buttons .btn-a:hover,
+header.header .wrapper .buttons .btn-a:focus {
     background-color: transparent;
     color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    header.header .wrapper h2 {
+        font-size: 2em;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
 }

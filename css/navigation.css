@@ -2,14 +2,14 @@ nav {
     padding-bottom: 10em;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     display: flex;
     background-color: #77777777;
     box-shadow: 0 0 10px #77777777;
 }
 
-ul li a {
+nav ul li a {
     display: block;
     color: var(--white-text-color);
     text-decoration: none;
@@ -17,6 +17,6 @@ ul li a {
     text-transform: uppercase;
 }
 
-ul li:hover a {
+nav ul li:hover a {
     color: var(--white-text-color-hover);
 }
