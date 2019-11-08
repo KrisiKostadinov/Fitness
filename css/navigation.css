@@ -1,0 +1,22 @@
+nav {
+    padding-bottom: 10em;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    background-color: #77777777;
+    box-shadow: 0 0 10px #77777777;
+}
+
+ul li a {
+    display: block;
+    color: var(--white-text-color);
+    text-decoration: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+ul li:hover a {
+    color: var(--white-text-color-hover);
+}

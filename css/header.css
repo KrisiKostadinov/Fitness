@@ -1,0 +1,66 @@
+header.header {
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/header.jpg');
+    background-size: cover;
+    color: #fff;
+    height: 70ch;
+}
+
+header.header .wrapper h2 {
+    position: relative;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+@keyframes show-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header.header .wrapper h2::after {
+    content: '';
+    width: 70%;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-color: var(--backround-color);
+}
+
+header.header .wrapper p {
+    color: var(--dark-text-color);
+    padding-top: 1em;
+    animation: show-in 1s;
+}
+
+header.header .wrapper .buttons {
+    padding-top: 6em;
+}
+
+header.header .wrapper .buttons a {
+    text-decoration: none;
+    color: var(--white-text-color);
+    padding: 1em 2em;
+    border: 2px solid #fff;
+    border-radius: 2em;
+    margin: 0 1em;
+    text-transform: uppercase;
+    animation: show-in 1s;
+}
+
+header.header .wrapper .buttons .btn-a {
+    background-color: #fff;
+    color: #222;
+    transition: 1s;
+}
+
+header.header .wrapper .buttons .btn-a:hover {
+    background-color: transparent;
+    color: #fff;
+}
